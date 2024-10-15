@@ -41,6 +41,6 @@ def main():
     for x, m in enumerate(MSGS):
         print(x, strxor(bytes.fromhex(m), KEY).decode(encoding= 'utf-8',errors='ignore'))
 
-    print(KEY.hex())
+    print(f'key:',KEY.hex())
 if __name__ == '__main__':
     main()
